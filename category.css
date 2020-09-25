@@ -78,6 +78,10 @@ h1,h2,h3,h4,h5,h6{
     transition: transform .5s;
     cursor: pointer;
 }
+#category .left_category .left_img{
+    overflow: hidden;
+    /* transform-origin: 50% 65%; */
+}
 #category .left_category .left_img .overlay_text p{
     position: relative;
     bottom: 40px;
@@ -88,7 +92,8 @@ h1,h2,h3,h4,h5,h6{
 #category .left_category .left_img img:hover {
     -ms-transform: scale(1.5); /* IE 9 */
     -webkit-transform: scale(1.5); /* Safari 3-8 */
-    transform: scale(1.5); 
+    transform: scale(1.5);
+
 }
 
 #category .right_category .right_imgs img{
@@ -111,10 +116,11 @@ h1,h2,h3,h4,h5,h6{
 #category .right_category .right_imgs{
     display: flex;
     margin-left: 5px;
+    overflow: hidden;
 }
 #category .right_category .right_imgs img{
     margin: 5px;
-    transition: transform .5s;
+    transition: transform .5s ease;
     cursor: pointer;
 }
 #category .right_category .right_imgs img:hover {
